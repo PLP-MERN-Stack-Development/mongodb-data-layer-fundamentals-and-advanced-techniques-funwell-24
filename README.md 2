@@ -1,0 +1,42 @@
+# PLP Bookstore - MongoDB Assignment (Week 1)
+
+## Overview
+This project demonstrates the fundamentals and advanced techniques of MongoDB.  
+It includes database setup, CRUD operations, advanced queries, aggregation pipelines, and indexing for performance optimization.  
+
+The database used is `plp_bookstore` with a single collection `books` containing 10+ sample book documents.
+
+---
+
+## 📂 Files Included
+| File | Description |
+|------|-------------|
+| `insert_books.js` | Script to insert 10+ sample book documents into the `books` collection. |
+| `queries.js` | Contains all MongoDB queries including CRUD, advanced queries, aggregation pipelines, and indexing examples. |
+| `screenshot.png` | Screenshot from MongoDB Compass/Atlas showing the `books` collection with inserted data. |
+
+---
+
+## 🛠 Setup Instructions
+
+### 1. Install MongoDB
+You can either:
+- **Install MongoDB locally**: [Download MongoDB Community Edition](https://www.mongodb.com/try/download/community)  
+- **Or use MongoDB Atlas**: [Create a free cluster](https://www.mongodb.com/cloud/atlas)
+
+Make sure MongoDB is running before proceeding.
+
+---
+
+### 2. Insert Sample Books
+1. Open **PowerShell** or terminal.  
+2. Start Mongo shell:
+```powershell
+mongosh
+
+3.Switch to the database:
+use plp_bookstore
+4.Copy and paste the content of insert_books.js into the shell.
+5.Press Enter.
+6.Verify the data was inserted:
+     db.books.find().pretty()
